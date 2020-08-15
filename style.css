@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.63),
+      rgba(0, 0, 0, 0.787)
+    ),
+    url(./images/cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.welcome {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 25vh;
+}
+
+.welcome h1 {
+  font-weight: bold;
+}
+
+.welcome p {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.view {
+  display: flex;
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.movie video {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.movie {
+  transition: all 600ms ease;
+}
+
+.movie:nth-child(1):hover {
+  transform-origin: 0%;
+  transform: scale(1.075);
+}
+.movie:nth-child(2):hover {
+  transform: scale(1.075);
+}
+.movie:nth-child(3):hover {
+  transform-origin: 100%;
+  transform: scale(1.075);
+}
+.movie:hover {
+  transition: transform 600ms ease;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.75);
+}
+
+.button {
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px 0;
+  width: 120px;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.primary {
+  background-color: #db1414;
+  color: #fff;
+}
