@@ -9,7 +9,7 @@ function playVideo(e) {
   setTimeout(() => {
     e.target.muted = false
     e.target.play()
-  }, 800)
+  }, 1000)
 }
 
 function stopVideo(e) {
@@ -17,5 +17,5 @@ function stopVideo(e) {
     e.target.muted = true
     e.target.load()
     e.target.pause()
-  }, 800)
+  }, 1000)
 }
